@@ -1,6 +1,6 @@
 {
   "name": "jenums",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "enums for javascript",
   "main": "./lib/index.js",
   "scripts": {},
