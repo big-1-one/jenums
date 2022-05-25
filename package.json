@@ -1,0 +1,27 @@
+{
+  "name": "jenums",
+  "version": "1.0.0",
+  "description": "enums for javascript",
+  "main": "./lib/index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/big-1-one/jenums.git"
+  },
+  "keywords": [
+    "enum",
+    "enums",
+    "enum-like",
+    "enums-like",
+    "jenum",
+    "jenums",
+    "js-enum",
+    "js-enums"
+  ],
+  "author": "big-1-one",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/big-1-one/jenums/issues"
+  },
+  "homepage": "https://github.com/big-1-one/jenums#readme"
+}
