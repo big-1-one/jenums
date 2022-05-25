@@ -3,7 +3,7 @@
 enums for javascript
 
 # Example
-
+## Enums
 ```js
 var { Enums } = require('jenums');
 
@@ -36,3 +36,40 @@ dir2.UP =  'new value';
 log(dir2.UP == 'new value') // false;
 log(dir2.UP == 'UP-Value') // false;
 ```
+## NumberEnums
+```js
+var { NumberEnums } = require('jenums');
+
+
+var enum = NumberEnums.new('start', 'waiting', 'end'); // value start at 0;
+
+var { log } = console;
+
+log(enum.start === 0); // true;
+log(enum.waiting === 1); // true;
+log(enum.end === 2); // true;
+
+var enum1 = NumberEnums.new(['start', 4], 'waiting', 'end'); // value start at 4;
+
+var { log } = console;
+
+log(enum1.start === 4); // true;
+log(enum1.waiting === 5); // true;
+log(enum1.end === 6); // true;
+
+var enum2 = NumberEnums.new(['start', 'START'], 'waiting', 'end'); // if value is string it start at sum of chars code (ex: S=83, T=84, A=65, R=82, T=84, START=83 + 84 + 65 + 82 + 84 = 398);
+
+var { log } = console;
+
+log(enum2.start === 398); // true;
+log(enum2.waiting === 399); // true;
+log(enum2.end === 400); // true;
+```
+
+
+# Classes
+* EnumsBuilder
+* Enums
+* StringEnums
+* SymbolEnums
+* NumberEnums
